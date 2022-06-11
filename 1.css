@@ -369,6 +369,14 @@
 .footer-right{
     text-align: right;
 }
+.footer-right a{
+    text-decoration: none;
+    color: rgba(255,255,255,.6);
+    transition: all 0.3s ease-in-out;
+}
+.footer-right a:hover{
+    color: #fc6060;
+}
 
 .footer-row h1{
     margin: 10px 0;
@@ -447,7 +455,7 @@
 
 #loader{
     background: #000 url(images/loader.gif) no-repeat center center;
-    background-size: 10%;
+    background-size: 15%;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -457,7 +465,7 @@
 
 @media screen and (max-width: 770px) {
     .banner-text h1{
-        font-size: 44px;
+        font-size: 42px;
     }
     .banner-btn {
         display: flex;
@@ -491,7 +499,10 @@
         margin: 5px auto;
     }
     .single-service:hover .service-desc{
-        bottom: 25% ;
+        bottom: 40% ;
+    }
+    .service-desc h3{
+        font-size: 0.9rem;
     }
     .testimonials-col{
         flex-basis: 100%;
@@ -508,7 +519,10 @@
     }
     .footer-mid nav ul li{
         padding: 5px;
-        /* border: 2px solid white; */
         margin: 5px;
+    }
+    #pushup{
+        right: 0%;
+        left: 30px;
     }
 }
