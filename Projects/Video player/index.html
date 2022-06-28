@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="btn">
+        <div class="play"></div>
+        <p>Play video</p>
+    </div>
+    <div class="clip">
+        <video src="back.mp4" controls autoplay unmuted type="video/mp4"></video>
+        <b class="close">close</b>
+    </div>
+    <script>
+        let btn = document.querySelector('.btn');
+        let clip = document.querySelector('.clip');
+        let video = document.querySelector('video');
+        let close = document.querySelector('.close');
+
+        btn.onclick = function() {
+            btn.classList.add('active')
+            clip.classList.add('active')
+            video.play();
+            video.currentTime = 0;
+        }
+        close.onclick = function(){
+            btn.classList.remove('active')
+            clip.classList.remove('active')
+            video.pause();
+        }
+    </script>
+</body>
+</html>

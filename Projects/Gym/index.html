@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <title> Sign Up </title>
+</head>
+<style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .background::before {
+        background-image: url(loginback1.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+        top: 0%;
+        content: "";
+        position: absolute;
+        filter: blur(2px);
+    }
+
+    .box {
+        float: left;
+        margin-left: 8%;
+    }
+
+    #login {
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    #login p a {
+        text-decoration: none;
+        color: #0080f7;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #login p a:hover {
+        color: #314fd4;
+    }
+
+    #login {
+        padding: 20px 30px;
+        background-color: #0e0e0e96;
+
+    }
+
+    .form {
+        color: white;
+    }
+
+    .form label {
+        font-size: 0.6rem;
+        padding: 20px;
+    }
+
+
+    .form input::placeholder {
+        color: white;
+    }
+
+    .form input {
+        width: 84%;
+        padding: 9px 20px;
+        border: 1px solid white;
+        border-radius: 25px;
+        background: transparent;
+        margin-top: 8px;
+        font-size: 0.6rem;
+        color: white;
+        outline: none;
+
+    }
+
+    .btn {
+        padding: 10px 111px;
+        border: transparent;
+        border-radius: 30px;
+        color: white;
+        cursor: pointer;
+        background: #1089ff;
+        font-size: 0.6rem;
+    }
+
+    .head {
+        color: white;
+        font-size: 55px;
+        text-shadow: 7px 7px 15px black;
+        margin: 3% 0% 0% 8%;
+        padding: 10px;
+        font-family: 'Oswald', sans-serif;
+    }
+    #error {
+    display: none;
+}   
+    @media screen and (max-width: 770px) {
+    #error{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000 url(404.gif) no-repeat center center;
+        background-size: 50%;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 100000;
+    }
+    #error p{
+        margin-top: 180px;
+    }
+    .background{
+        display: none;
+    }
+}
+</style>
+
+<body>
+    <div id="error">
+        
+    </div>
+    <div class="background">
+        
+            <p class="head">SIGN UP HERE</p>
+       
+        <div class="box">
+            <form action="gym.html" id="login">
+                <center>
+                    <p style="color: white;font-size: 20px; margin-bottom: 25px;">Create Your Account
+                    </p>
+                </center>
+                <div class="form">
+                    <label for="Name"> USERNAME : </label> <br>
+                    <input type="text" id="Name" placeholder="Enter the Username" autocomplete="off" />
+                </div>
+                <br>
+                <div class="form">
+                    <label for="Email"> EMAIL : </label> <br>
+                    <input type="email" id="Email" placeholder="Enter the Email" autocomplete="off" />
+                </div>
+                <br>
+                <div class="form">
+                    <label for="password"> PASSWORD : </label> <br>
+                    <input type="password" id="password" placeholder="Enter the Password">
+                </div>
+                <br>
+                <div class="form">
+                    <label for="password"> RETYPE-PASSWORD : </label> <br>
+                    <input type="password" id="password" placeholder="Confirm Password">
+                </div>
+                <br>
+                <center><input type="submit" value="Sign Up" class="btn"></center>
+                <br>
+                <center>
+                    <p style="color: white; font-size: 12px;">I already have a account ! <a href="login.html">Login
+                            In</a>
+                    </p>
+                </center>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

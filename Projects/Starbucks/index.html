@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" />
+    <link rel="stylesheet" href="Starbucks.css">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div class="main">
+        <img src="logo.png" alt="" class="logo">
+        <header class="head">
+            <img src="logo.png" alt="">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </header>
+        
+        <section class="content">
+            <div class="details">
+                <h1>It's not just Coffee</h1>
+                <h1>It's <span class="span">Starbucks</span></h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, porro! Voluptatibus unde enim,
+                    dolores quam esse illum iste temporibus ducimus! Ipsa, molestias aut autem, nobis voluptate minima
+                    quidem sunt saepe explicabo fugiat possimus labore error illo nihil? Expedita reiciendis
+                    exercitationem est iste recusandae sed quasi perferendis magnam modi. Quas repellendus neque laborum.</p>
+                <button class="btn">Learn more</button>
+            </div>
+            <div class="image">
+                <img src="img1.png" alt="" class="starbucks">
+            </div>
+            <div class="product">
+                <img src="thumb1.png" onclick="change('img1.png'); changecircle('green'); color('green'); span('green')" alt="">
+                <img src="thumb2.png" onclick="change('img2.png'); changecircle('#ff9cad'); color('#ff9cad'); span('#ff9cad')" alt="">
+                <img src="thumb3.png" onclick="change('img3.png'); changecircle('#ff44eaa8'); color('#ff44eaa8'); span('#ff44eaa8')" alt="">
+            </div>
+        </section>
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">What's New</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menubtn">
+            <img src="menu.png" alt="" id="menu">
+        </div>
+    </div>
+    <script>
+        function change(product) {
+            document.querySelector('.starbucks').src = product;
+        }
+        function changecircle(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color
+            
+        }
+        function color(color) {
+            const circle = document.querySelector('.btn');
+            circle.style.background = color
+        }
+        function span(span) {
+            const circle = document.querySelector('.span');
+            circle.style.color = span
+        }
+        var manubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+        var menu = document.getElementById("menu");
+        sidenav.style.right = "-300px";
+        menubtn.onclick = function () {
+            if (sidenav.style.right == "-300px") {
+                sidenav.style.right = "0";
+                menu.src = "close.png";
+            }
+            else {
+                sidenav.style.right = "-300px";
+                menu.src = "menu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
