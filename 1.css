@@ -12,18 +12,10 @@
     height: 100vh;
 }
 .logo{
-    width: 250px;
+    width: 180px;
     position: absolute;
     top: 4%;
     left: 10%;
-}
-.logo h1{
-    color: #fc6060;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.303);
 }
 .banner-text{
     text-align: center;
