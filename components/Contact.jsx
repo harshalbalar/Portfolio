@@ -10,7 +10,7 @@ export default function Contact() {
     <footer id="contact" className="relative border-t border-line">
       <div className="mx-auto max-w-7xl px-5 py-28 sm:px-8 sm:py-36">
         <p className="mb-6 font-mono text-[11px] uppercase tracking-[0.3em] text-muted">
-          {`04 — ${t.contact.eyebrow}`}
+          {`05 — ${t.contact.eyebrow}`}
         </p>
 
         <motion.a

@@ -56,6 +56,7 @@ export default function Nav() {
           <a className="link-underline hover:text-fg" href="#about">{t.nav.about}</a>
           <a className="link-underline hover:text-fg" href="#skills">{t.nav.skills}</a>
           <a className="link-underline hover:text-fg" href="#work">{t.nav.work}</a>
+          <a className="link-underline hover:text-fg" href="#events">{t.nav.events}</a>
           <a className="link-underline hover:text-fg" href="#contact">{t.nav.contact}</a>
         </nav>
 

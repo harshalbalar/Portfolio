@@ -6,6 +6,7 @@ import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Events from "@/components/Events";
 import Contact from "@/components/Contact";
 import { getProjects } from "@/lib/github";
 import { skillGroups } from "@/lib/data";
@@ -27,6 +28,7 @@ export default async function Home() {
         <About />
         <Skills />
         <Projects projects={projects} />
+        <Events />
         <Contact />
       </main>
     </>
